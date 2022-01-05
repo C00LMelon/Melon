@@ -1,0 +1,22 @@
+--Nil wuz here!!1!
+game.StarterGui:SetCore("SendNotification",
+{ Title = "~☠ NilTools Loaded☠~";
+Text = "Pog Moment!";
+Icon = "";
+Duration = 3;
+Callback = bindableFunction;
+Button1 = "";
+Button2 = "";
+})
+local contextActionService = game:GetService("ContextActionService") function onButtonPress() while true do game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100 wait() end end local mobilebutton = contextActionService:BindAction("WalkspeedButton",onButtonPress,true,"⚡") contextActionService:SetPosition("WalkspeedButton",UDim2.new(0.72,-25,0.20,-25)) contextActionService:SetImage("WalkspeedButton","http://www.roblox.com/asset/?id=7515644645")
+local contextActionService = game:GetService("ContextActionService") function onButtonPress() while true do game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200 wait() end end local mobilebutton = contextActionService:BindAction("JPButton",onButtonPress,true,"🚀") contextActionService:SetPosition("JPButton",UDim2.new(0.72,-95,0.3,-1)) contextActionService:SetImage("JPButton","http://www.roblox.com/asset/?id=7515864087")
+local contextActionService = game:GetService("ContextActionService") function onButtonPress() game.Players.LocalPlayer.Character.Head:Destroy() end local mobilebutton = contextActionService:BindAction("ResetButton",onButtonPress,true,"💀") contextActionService:SetPosition("ResetButton",UDim2.new(0.72,-80,-0.04,-1)) contextActionService:SetImage("ResetButton","http://www.roblox.com/asset/?id=7516128448")
+local contextActionService = game:GetService("ContextActionService") function onButtonPress() game.Players.LocalPlayer.Character.Humanoid.Sit = true end local mobilebutton = contextActionService:BindAction("SitButton",onButtonPress,true,"💺") contextActionService:SetPosition("SitButton",UDim2.new(00.40,-80,-0.08,10)) contextActionService:SetImage("SitButton","http://www.roblox.com/asset/?id=7516511841")
+local contextActionService = 
+game:GetService("ContextActionService") function onButtonPress() AnimationId = "183294396"
+local NilrogramIsPog = Instance.new("Animation")
+NilrogramIsPog.AnimationId = "rbxassetid://"..AnimationId
+local ILoveAshley = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(NilrogramIsPog)
+ILoveAshley:Play()
+ILoveAshley:AdjustSpeed(1) end
+local mobilebutton = contextActionService:BindAction("HugButton",onButtonPress,true,"❤") contextActionService:SetPosition("HugButton",UDim2.new(00.40,19.4,-0.36,5)) contextActionService:SetImage("HugButton","http://www.roblox.com/asset/?id=7518046690")
