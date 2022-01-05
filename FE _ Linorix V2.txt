@@ -1,0 +1,831 @@
+local LinorixV2 = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Top = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local Exit = Instance.new("TextButton")
+local Bar = Instance.new("TextLabel")
+local Box = Instance.new("TextLabel")
+local One = Instance.new("TextLabel")
+local Two = Instance.new("TextLabel")
+local Four = Instance.new("TextLabel")
+local Three = Instance.new("TextLabel")
+local cmdbar = Instance.new("TextLabel")
+local CMD = Instance.new("TextBox")
+local Run = Instance.new("TextButton")
+local Reanimate1 = Instance.new("TextButton")
+local Reanimate2 = Instance.new("TextButton")
+local CharacterBug = Instance.new("TextButton")
+local R6 = Instance.new("TextButton")
+local Discord = Instance.new("TextButton")
+local O1 = Instance.new("TextLabel")
+local RO1 = Instance.new("TextLabel")
+local RO2 = Instance.new("TextLabel")
+local OD = Instance.new("TextLabel")
+ 
+LinorixV2.Name = "LinorixV2"
+LinorixV2.Parent = game.CoreGui
+LinorixV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = LinorixV2
+Main.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.37724179, 0, 0.288697779, 0)
+Main.Size = UDim2.new(0, 397, 0, 343)
+Main.Active = true
+Main.Selectable = true
+Main.Draggable = true
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Top.BorderSizePixel = 0
+Top.Size = UDim2.new(0, 397, 0, 33)
+Top.Font = Enum.Font.SourceSans
+Top.Text = " "
+Top.TextColor3 = Color3.new(0, 0, 0)
+Top.TextSize = 14
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Title.BackgroundTransparency = 1
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.01511335, 0, 0, 0)
+Title.Size = UDim2.new(0, 131, 0, 33)
+Title.Font = Enum.Font.Nunito
+Title.Text = "Linorix Hub V2"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextScaled = true
+Title.TextSize = 14
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Exit.Name = "Exit"
+Exit.Parent = Main
+Exit.BackgroundColor3 = Color3.new(1, 1, 1)
+Exit.BackgroundTransparency = 1
+Exit.Position = UDim2.new(0.906800985, 0, 0, 0)
+Exit.Size = UDim2.new(0, 37, 0, 33)
+Exit.Font = Enum.Font.Nunito
+Exit.Text = "X"
+Exit.TextColor3 = Color3.new(1, 1, 1)
+Exit.TextScaled = true
+Exit.TextSize = 14
+Exit.TextWrapped = true
+Exit.MouseButton1Down:Connect(function()
+LinorixV2:Destroy()
+end)
+
+Bar.Name = "Bar"
+Bar.Parent = Main
+Bar.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+Bar.BorderSizePixel = 0
+Bar.Position = UDim2.new(0.01511335, 0, 0.113702625, 0)
+Bar.Size = UDim2.new(0, 6, 0, 165)
+Bar.Font = Enum.Font.SourceSans
+Bar.Text = " "
+Bar.TextColor3 = Color3.new(0, 0, 0)
+Bar.TextSize = 14
+
+Box.Name = "Box"
+Box.Parent = Main
+Box.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Box.BorderSizePixel = 0
+Box.Position = UDim2.new(0.0302267, 0, 0.113702625, 0)
+Box.Size = UDim2.new(0, 374, 0, 165)
+Box.Font = Enum.Font.SourceSans
+Box.Text = " "
+Box.TextColor3 = Color3.new(0, 0, 0)
+Box.TextSize = 14
+
+One.Name = "One"
+One.Parent = Main
+One.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+One.BackgroundTransparency = 1
+One.BorderSizePixel = 0
+One.Position = UDim2.new(0.0302267, 0, 0.113702625, 0)
+One.Size = UDim2.new(0, 374, 0, 23)
+One.Font = Enum.Font.Nunito
+One.Text = "print(\"Welcome to Linorix Hub V2\")"
+One.TextColor3 = Color3.new(0, 0.666667, 1)
+One.TextScaled = true
+One.TextSize = 14
+One.TextWrapped = true
+One.TextXAlignment = Enum.TextXAlignment.Left
+
+Two.Name = "Two"
+Two.Parent = Main
+Two.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Two.BackgroundTransparency = 1
+Two.BorderSizePixel = 0
+Two.Position = UDim2.new(0.0302267, 0, 0.180758029, 0)
+Two.Size = UDim2.new(0, 374, 0, 23)
+Two.Font = Enum.Font.Nunito
+Two.Text = "local plr = game.Players.LocalPlayer"
+Two.TextColor3 = Color3.new(0, 0.666667, 1)
+Two.TextScaled = true
+Two.TextSize = 14
+Two.TextWrapped = true
+Two.TextXAlignment = Enum.TextXAlignment.Left
+
+Four.Name = "Four"
+Four.Parent = Main
+Four.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Four.BackgroundTransparency = 1
+Four.BorderSizePixel = 0
+Four.Position = UDim2.new(0.0277078077, 0, 0.320699722, 0)
+Four.Size = UDim2.new(0, 374, 0, 23)
+Four.Font = Enum.Font.Nunito
+Four.Text = "--Made by vil#9879"
+Four.TextColor3 = Color3.new(0, 0.666667, 1)
+Four.TextScaled = true
+Four.TextSize = 14
+Four.TextWrapped = true
+Four.TextXAlignment = Enum.TextXAlignment.Left
+
+Three.Name = "Three"
+Three.Parent = Main
+Three.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Three.BackgroundTransparency = 1
+Three.BorderSizePixel = 0
+Three.Position = UDim2.new(0.0302267, 0, 0.247813433, 0)
+Three.Size = UDim2.new(0, 374, 0, 23)
+Three.Font = Enum.Font.Nunito
+Three.Text = "plr.Name = USERNAME"
+Three.TextColor3 = Color3.new(0, 0.666667, 1)
+Three.TextScaled = true
+Three.TextSize = 14
+Three.TextWrapped = true
+Three.TextXAlignment = Enum.TextXAlignment.Left
+
+cmdbar.Name = "cmdbar"
+cmdbar.Parent = Main
+cmdbar.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+cmdbar.BorderSizePixel = 0
+cmdbar.Position = UDim2.new(0.01511335, 0, 0.681729794, 0)
+cmdbar.Size = UDim2.new(0, 381, 0, 2)
+cmdbar.Font = Enum.Font.SourceSans
+cmdbar.Text = " "
+cmdbar.TextColor3 = Color3.new(0, 0, 0)
+cmdbar.TextSize = 14
+
+CMD.Name = "CMD"
+CMD.Parent = Main
+CMD.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+CMD.BorderSizePixel = 0
+CMD.Position = UDim2.new(0.01511335, 0, 0.612244904, 0)
+CMD.Size = UDim2.new(0, 354, 0, 23)
+CMD.Font = Enum.Font.Nunito
+CMD.Text = ""
+CMD.TextColor3 = Color3.new(0, 0.666667, 1)
+CMD.TextScaled = true
+CMD.TextSize = 14
+CMD.TextWrapped = true
+CMD.TextXAlignment = Enum.TextXAlignment.Left
+
+Run.Name = "Run"
+Run.Parent = Main
+Run.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+Run.BorderSizePixel = 0
+Run.Position = UDim2.new(0.906800985, 0, 0.612244904, 0)
+Run.Size = UDim2.new(0, 27, 0, 23)
+Run.Font = Enum.Font.SourceSans
+Run.Text = ">"
+Run.TextColor3 = Color3.new(0, 0.666667, 1)
+Run.TextScaled = true
+Run.TextSize = 14
+Run.TextWrapped = true
+
+Reanimate1.Name = "Reanimate1"
+Reanimate1.Parent = Main
+Reanimate1.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Reanimate1.BorderSizePixel = 0
+Reanimate1.Position = UDim2.new(0.751286507, 0, 0.705539346, 0)
+Reanimate1.Size = UDim2.new(0, 88, 0, 31)
+Reanimate1.Font = Enum.Font.SourceSans
+Reanimate1.Text = "Reanimate 1"
+Reanimate1.TextColor3 = Color3.new(0, 0.666667, 1)
+Reanimate1.TextScaled = true
+Reanimate1.TextSize = 14
+Reanimate1.TextWrapped = true
+OD.Visible = false
+RO1.Visible = true
+wait(2)
+RO2.Visible = true
+wait(5)
+RO1.Visible = false
+RO2.Visible = false
+Reanimate1.MouseButton1Down:Connect(function()
+	OD.Visible = false
+	RO1.Visible = true
+	--[[Options]]--
+	_G.CharacterBug = false --Set to true if your uppertorso floats when you use godmode with R15 To R6.
+	_G.GodMode = false --Set to true if you want godmode.
+	_G.R6 = false --Set to true if you wanna enable R15 to R6 when your R15.
+	--[[Reanimate]]--
+	loadstring(game:HttpGet("https://paste.ee/r/pt8Dx/0"))()
+	wait(2)
+	RO2.Visible = true
+	wait(5)
+	RO1.Visible = false
+	RO2.Visible = false
+end)
+
+Reanimate2.Name = "Reanimate2"
+Reanimate2.Parent = Main
+Reanimate2.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Reanimate2.BorderSizePixel = 0
+Reanimate2.Position = UDim2.new(0.513452172, 0, 0.705539346, 0)
+Reanimate2.Size = UDim2.new(0, 88, 0, 31)
+Reanimate2.Font = Enum.Font.SourceSans
+Reanimate2.Text = "Reanimate 2"
+Reanimate2.TextColor3 = Color3.new(0, 0.666667, 1)
+Reanimate2.TextScaled = true
+Reanimate2.TextSize = 14
+Reanimate2.TextWrapped = true
+Reanimate2.MouseButton1Down:Connect(function()
+	OD.Visible = false
+	RO1.Visible = true
+	Bypass = "death"
+	loadstring(game:GetObjects("rbxassetid://5325226148")[1].Source)()
+	-----OPTIONS
+	local ToolName = "MeshPartAccessory" ----- the hats name on explorer/dex (not name in catalog)
+	local NoSound = true ----- sound or no sound (Background Music)
+	local OldModel = false ----- Use Old Model or your accessory
+
+	local IsDead = false
+	local StateMover = true
+
+	local playerss = workspace.non
+	local maybe = playerss[ToolName].Handle
+	local bbv,bullet
+	if Bypass == "death" then
+		bullet = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+		bullet.Transparency = 0
+		bullet.Massless = true
+		if bullet:FindFirstChildOfClass("Attachment") then
+			for _,v in pairs(bullet:GetChildren()) do
+				if v:IsA("Attachment") then
+					v:Destroy()
+				end
+			end
+		end
+
+		bbv = Instance.new("BodyPosition",bullet)
+		bbv.Position = playerss.Torso.CFrame.p
+	end
+
+	if maybe:FindFirstChild("AccessoryWeld") then maybe:FindFirstChild("AccessoryWeld"):Destroy() end
+	if game.Players.LocalPlayer.Character[ToolName].Handle:FindFirstChild("AccessoryWeld") then game.Players.LocalPlayer.Character[ToolName].Handle:FindFirstChild("AccessoryWeld"):Destroy() end
+
+
+	maybe:FindFirstChildOfClass("AlignPosition").Name = "AlignPosition2"
+	maybe:FindFirstChildOfClass("AlignOrientation").Name = "AlignOrientation2"
+
+	playerss.Torso.WaistBackAttachment.Position = Vector3.new(-0, -0, 0.6)
+	playerss.Torso.WaistBackAttachment.Orientation = Vector3.new(-4.16, -179.28, 99.8)
+
+	if Bypass == "death" then
+		coroutine.wrap(function()
+			while true do
+				if not playerss or not playerss:FindFirstChildOfClass("Humanoid") or playerss:FindFirstChildOfClass("Humanoid").Health <= 0 then IsDead = true; return end
+				if StateMover then
+					bbv.Position = playerss.Torso.CFrame.p
+					bullet.Position = playerss.Torso.CFrame.p
+				end
+				game:GetService("RunService").RenderStepped:wait()
+			end
+		end)()
+	end
+
+	local CDDF = {}
+	local DamageFling = function(DmgPer)
+		if IsDead or Bypass ~= "death" or (DmgPer.Name == playerss.Name and DmgPer.Name == "non") or CDDF[DmgPer] or not DmgPer or not DmgPer:FindFirstChildOfClass("Humanoid") or DmgPer:FindFirstChildOfClass("Humanoid").Health <= 0 then return end
+		CDDF[DmgPer] = true; StateMover = false
+		local PosFling = (DmgPer:FindFirstChild("HumanoidRootPart") and DmgPer:FindFirstChild("HumanoidRootPart") .CFrame.p) or (DmgPer:FindFirstChildOfClass("Part") and DmgPer:FindFirstChildOfClass("Part").CFrame.p)
+		bbav = Instance.new("BodyAngularVelocity",bullet)
+		bbav.MaxTorque = Vector3.new(math.huge,math.huge,math.huge)
+		bbav.P = 1000000000000000000000000000
+		bbav.AngularVelocity = Vector3.new(10000000000000000000000000000000,100000000000000000000000000,100000000000000000)
+		game:GetService("Debris"):AddItem(bbav,0.1)
+		bullet.Rotation = playerss.Torso.Rotation
+		for _=1,15 do
+			bbv.Position = PosFling
+			bullet.Position = PosFling
+			wait(0.03)
+		end
+		bbv.Position = playerss.Torso.CFrame.p
+		bullet.Position = playerss.Torso.CFrame.p
+		CDDF[DmgPer] = false; StateMover = true
+	end
+	wait(6)
+	RO2.Visible = true
+	wait(5)
+	RO1.Visible = false
+	RO2.Visible = false
+end)
+
+CharacterBug.Name = "CharacterBug"
+CharacterBug.Parent = Main
+CharacterBug.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+CharacterBug.BorderSizePixel = 0
+CharacterBug.Position = UDim2.new(0.268150359, 0, 0.705539346, 0)
+CharacterBug.Size = UDim2.new(0, 88, 0, 31)
+CharacterBug.Font = Enum.Font.SourceSans
+CharacterBug.Text = "Character Bug"
+CharacterBug.TextColor3 = Color3.new(0, 0.666667, 1)
+CharacterBug.TextScaled = true
+CharacterBug.TextSize = 14
+CharacterBug.TextWrapped = true
+CharacterBug.MouseButton1Down:Connect(function()
+	--[[Options]]--
+	_G.CharacterBug = true --Set to true if your uppertorso floats when you use godmode with R15 To R6.
+	_G.GodMode = false --Set to true if you want godmode.
+	_G.R6 = false --Set to true if you wanna enable R15 to R6 when your R15.
+	--[[Reanimate]]--
+	loadstring(game:HttpGet("https://paste.ee/r/pt8Dx/0"))()
+end)
+
+R6.Name = "R6"
+R6.Parent = Main
+R6.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+R6.BorderSizePixel = 0
+R6.Position = UDim2.new(0.866498768, 0, 0.883381903, 0)
+R6.Size = UDim2.new(0, 41, 0, 31)
+R6.Font = Enum.Font.SourceSans
+R6.Text = "R6"
+R6.TextColor3 = Color3.new(0, 0.666667, 1)
+R6.TextScaled = true
+R6.TextSize = 14
+R6.TextWrapped = true
+R6.MouseButton1Down:Connect(function()
+	--[[Options]]--
+	_G.CharacterBug = false --Set to true if your uppertorso floats when you use godmode with R15 To R6.
+	_G.GodMode = false --Set to true if you want godmode.
+	_G.R6 = true --Set to true if you wanna enable R15 to R6 when your R15.
+	--[[Reanimate]]--
+	loadstring(game:HttpGet("https://paste.ee/r/pt8Dx/0"))()
+end)
+
+Discord.Name = "Discord"
+Discord.Parent = Main
+Discord.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Discord.BorderSizePixel = 0
+Discord.Position = UDim2.new(0.01511335, 0, 0.705539346, 0)
+Discord.Size = UDim2.new(0, 88, 0, 31)
+Discord.Font = Enum.Font.SourceSans
+Discord.Text = "Discord"
+Discord.TextColor3 = Color3.new(0, 0.666667, 1)
+Discord.TextScaled = true
+Discord.TextSize = 14
+Discord.TextWrapped = true
+Discord.MouseButton1Down:Connect(function()
+	OD.Visible = true
+	RO1.Visible = false
+	RO2.Visible = false
+end)
+
+O1.Name = "O1"
+O1.Parent = Main
+O1.BackgroundColor3 = Color3.new(1, 1, 1)
+O1.BackgroundTransparency = 1
+O1.Position = UDim2.new(0.01511335, 0, 0.816326559, 0)
+O1.Size = UDim2.new(0, 131, 0, 17)
+O1.Font = Enum.Font.Nunito
+O1.Text = "12/2/2020 Linorix V2"
+O1.TextColor3 = Color3.new(0, 0.666667, 1)
+O1.TextScaled = true
+O1.TextSize = 14
+O1.TextWrapped = true
+O1.TextXAlignment = Enum.TextXAlignment.Left
+
+RO1.Name = "RO1"
+RO1.Parent = Main
+RO1.BackgroundColor3 = Color3.new(1, 1, 1)
+RO1.BackgroundTransparency = 1
+RO1.Position = UDim2.new(0.01511335, 0, 0.865889251, 0)
+RO1.Size = UDim2.new(0, 131, 0, 17)
+RO1.Visible = false
+RO1.Font = Enum.Font.Nunito
+RO1.Text = "Reanimating..."
+RO1.TextColor3 = Color3.new(1, 1, 0.498039)
+RO1.TextScaled = true
+RO1.TextSize = 14
+RO1.TextWrapped = true
+RO1.TextXAlignment = Enum.TextXAlignment.Left
+
+RO2.Name = "RO2"
+RO2.Parent = Main
+RO2.BackgroundColor3 = Color3.new(1, 1, 1)
+RO2.BackgroundTransparency = 1
+RO2.Position = UDim2.new(0.01511335, 0, 0.915451944, 0)
+RO2.Size = UDim2.new(0, 131, 0, 17)
+RO2.Visible = false
+RO2.Font = Enum.Font.Nunito
+RO2.Text = "Reanimated!"
+RO2.TextColor3 = Color3.new(0, 1, 0.498039)
+RO2.TextScaled = true
+RO2.TextSize = 14
+RO2.TextWrapped = true
+RO2.TextXAlignment = Enum.TextXAlignment.Left
+
+OD.Name = "OD"
+OD.Parent = Main
+OD.BackgroundColor3 = Color3.new(1, 1, 1)
+OD.BackgroundTransparency = 1
+OD.Position = UDim2.new(0.01511335, 0, 0.865889192, 0)
+OD.Size = UDim2.new(0, 326, 0, 37)
+OD.Font = Enum.Font.Nunito
+OD.Text = "Discord: https://discord.gg/aGASmuP7j5"
+OD.TextColor3 = Color3.new(0, 0.666667, 1)
+OD.TextScaled = true
+OD.TextSize = 14
+OD.TextWrapped = true
+OD.TextXAlignment = Enum.TextXAlignment.Left
+
+local Frame = Main
+local Open = false
+
+local PositionClosed = UDim2.new(0.291, 0,2, 0)
+local PositionOpened = UDim2.new(0.377, 0,0.289, 0)
+
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputBegan:Connect(function(keyCode)
+	if keyCode.keyCode == Enum.KeyCode.Insert then
+		if Open then
+			Frame:TweenPosition((PositionClosed),'Out','Linear',.25)
+			Open = false
+		else
+			Open = true
+			Frame:TweenPosition((PositionOpened),'Out','Linear',.25)
+		end
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".sniper" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/dtz7qGBg'),true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".starglitcher" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/KqcTFiad'),true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".gale" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/yVXFL5QY'),true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".cop" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/VAA5Mf60'),true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".carnage" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/Ntg4PB33'),true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".NPC" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/8U5qGp6Y'),true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".elio blasio" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/Uqgjgieq'),true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".chips" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/Yj0q2v0U'),true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".sex doll" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/dB6DGBB6'),true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".titan" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/qSMz7Uiu'),true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".sonic" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/SyF5t70A"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".neptune v" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/t0Mkc33N"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".gun" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/0Jv3udmi"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".joy" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/0B76TD7N"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".ender" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/hv190Xiq"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".killbot v2" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/G24tcRXA"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".cat v2" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/YLfR8Qx9"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".chill" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/XmHFdTij"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".lutris v2" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/6jeamwQL"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".memeus v2.5" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/cCMJ9C82"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".meme" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/0QfjMKrF"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".krystal dance" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/TELjLdEU"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".pen" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/1qcpeuDm"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".xester" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/RPwyPvEi"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".caducus" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/jfryBKds"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".minigun" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/sK9EUPE6"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".broomstick" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/xyHiNwtg"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".headless" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/mssZBy9j"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".head hold" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/jsZHrVFf"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".goopie" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/fKLm580i"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".spider" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/txsk1LJg4717"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".orange justice" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/Efg0DgkP"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".retard" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/xLPcieGZ"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".floss" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/JfyvWHLf"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".default dance" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/iXAe7Fub"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".smug" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/NKub3B4R"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".distract dance" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/2tJBN38N"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".russian kick" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/1P37qYeV"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".insanity powers" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/ygWAZh5A"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".zen" then
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/o5u3/Zen/main/ZenFlingFE.txt"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".car drift" then
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".hell robotics" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/cF4yBbWs"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".touch kill" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/KaYHHvh7"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".pillow" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/RbKLMpdt"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".rainbow king" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/Xfxx4qJ0"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".pp" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/MMDGHMq1"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".fap" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/A90r2pqX"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".bread" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/rvWcXEBg"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".genocider" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/fFhLBNPU"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".abyss eye" then
+		loadstring(game:HttpGet("https://paste.ee/r/tUPmo/0"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".rolex" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/qViPAp8g"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".nazi chat" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/ahBKsjJ2"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".take the l" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/VkWkuyzc"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".naruto" then
+		loadstring(game:HttpGetAsync("https://hastebin.com/raw/ohequwikaf"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".sword" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/GhAfTaGk"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".aureate" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/71S0q0XT"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".stand" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/RZ4v0S3M"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".rape" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/6zBqd3M0"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".username sniper" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/a5vi6aUq"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".god mode" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/sc0UNxwj"))()
+	end
+end)
+
+Run.MouseButton1Down:Connect(function()
+	if CMD.Text == ".net fix" then
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/3m6vxja9"))()
+	end
+end)
