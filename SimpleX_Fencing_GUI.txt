@@ -1,0 +1,484 @@
+
+--// GUI COMPONENTS //--
+
+local m_core = Instance.new("ScreenGui");local c_menu_core = Instance.new("Frame");local c_group_boxs = Instance.new("Frame");local c_buttons = Instance.new("Frame");local Fencing = Instance.new("TextButton");local t1 = Instance.new("Frame");local t2 = Instance.new("Frame");local FencingLabel = Instance.new("TextLabel");local c_core_1 = Instance.new("Frame");local float = Instance.new("TextButton");local floatlabel = Instance.new("TextLabel");local airwalk = Instance.new("TextButton");local airlabel = Instance.new("TextLabel");local invisible = Instance.new("TextButton");local invislabel = Instance.new("TextLabel");local crazy = Instance.new("TextButton");local crazylabel = Instance.new("TextLabel");local aibot = Instance.new("TextButton");local ailabel = Instance.new("TextLabel");local spinbot = Instance.new("TextButton");local spinlabel = Instance.new("TextLabel");local ac = Instance.new("TextButton");local aclabel = Instance.new("TextLabel");local tpkill = Instance.new("TextButton");local tplabel = Instance.new("TextLabel");local killtxt = Instance.new("TextBox");local killabel = Instance.new("TextLabel");local deathtxt = Instance.new("TextBox");local deathlabel = Instance.new("TextLabel");local drop = Instance.new("TextButton");local droplabel = Instance.new("TextLabel")local c_bar = Instance.new("Frame");local Title = Instance.new("TextLabel")
+m_core.Name = "m_core";m_core.Parent = game.CoreGui;m_core.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+c_menu_core.Name = "c_menu_core";c_menu_core.Parent = m_core;c_menu_core.Active = true;c_menu_core.Draggable = true;c_menu_core.BackgroundColor3 = Color3.new(0.109804, 0.117647, 0.152941);c_menu_core.BorderColor3 = Color3.new(0.109804, 0.117647, 0.152941);c_menu_core.BorderSizePixel = 0;c_menu_core.Position = UDim2.new(0.5, -200, 0.5, -200);c_menu_core.Size = UDim2.new(0, 400, 0, 400)
+c_group_boxs.Name = "c_group_boxs";c_group_boxs.Parent = c_menu_core;c_group_boxs.BackgroundColor3 = Color3.new(0.109804, 0.117647, 0.152941);c_group_boxs.BorderSizePixel = 0;c_group_boxs.Position = UDim2.new(0.0250000004, 0, 0.0874999985, 0);c_group_boxs.Size = UDim2.new(0, 380, 0, 355)
+c_buttons.Name = "c_buttons";c_buttons.Parent = c_group_boxs;c_buttons.BackgroundColor3 = Color3.new(0.160784, 0.172549, 0.223529);c_buttons.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);c_buttons.Size = UDim2.new(0, 100, 0, 355)
+Fencing.Name = "Fencing";Fencing.Parent = c_buttons;Fencing.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);Fencing.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);Fencing.Position = UDim2.new(0.100000001, 0, 0.0281690136, 0);Fencing.Size = UDim2.new(0, 80, 0, 30);Fencing.AutoButtonColor = false;Fencing.Font = Enum.Font.SourceSans;Fencing.Text = "Fencing";Fencing.TextColor3 = Color3.new(1, 1, 1);Fencing.TextSize = 14
+t1.Name = "t1";t1.Parent = Fencing;t1.BackgroundColor3 = Color3.new(0.298039, 0.509804, 0.709804);t1.BorderSizePixel = 0;t1.Size = UDim2.new(0, 80, 0, 0);t1.Visible = false
+t2.Name = "t2";t2.Parent = Fencing;t2.BackgroundColor3 = Color3.new(0.298039, 0.509804, 0.709804);t2.BorderSizePixel = 0;t2.Position = UDim2.new(0, 0, 0.5, 15);t2.Size = UDim2.new(0, 80, 0, 0);t2.Visible = false
+FencingLabel.Name = "FencingLabel";FencingLabel.Parent = Fencing;FencingLabel.BackgroundColor3 = Color3.new(0.298039, 0.509804, 0.709804);FencingLabel.BackgroundTransparency = 1;FencingLabel.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);FencingLabel.Size = UDim2.new(0, 80, 0, 30);FencingLabel.Visible = false;FencingLabel.Font = Enum.Font.SourceSans;FencingLabel.Text = "Fencing";FencingLabel.TextColor3 = Color3.new(1, 1, 1);FencingLabel.TextSize = 14
+c_bar.Name = "c_bar";c_bar.Parent = c_menu_core;c_bar.BackgroundColor3 = Color3.new(0.298039, 0.509804, 0.709804);c_bar.BorderColor3 = Color3.new(0.588235, 0.588235, 0.588235);c_bar.BorderSizePixel = 0;c_bar.Size = UDim2.new(0, 400, 0, 25)
+Title.Name = "Title";Title.Parent = c_bar;Title.BackgroundColor3 = Color3.new(1, 1, 1);Title.BackgroundTransparency = 1;Title.BorderSizePixel = 0;Title.Position = UDim2.new(0.25, 0, 0, 0);Title.Size = UDim2.new(0, 200, 0, 25);Title.Font = Enum.Font.SourceSans;Title.Text = "SimpleX";Title.TextColor3 = Color3.new(1, 1, 1);Title.TextSize = 14
+c_core_1.Name = "c_core_1";c_core_1.Visible = false;c_core_1.Parent = c_group_boxs;c_core_1.BackgroundColor3 = Color3.new(0.109804, 0.117647, 0.152941);c_core_1.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);c_core_1.Position = UDim2.new(0.284210533, 0, 0, 0);c_core_1.Size = UDim2.new(0, 272, 0, 355)
+float.Name = "float";float.Parent = c_core_1;float.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);float.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);float.Position = UDim2.new(0.0477941185, 0, 0.0422535203, 0);float.Size = UDim2.new(0, 20, 0, 20);float.Font = Enum.Font.SourceSans;float.Text = "";float.TextColor3 = Color3.new(0, 0, 0);float.TextSize = 14
+floatlabel.Name = "floatlabel";floatlabel.Parent = float;floatlabel.BackgroundColor3 = Color3.new(1, 1, 1);floatlabel.BackgroundTransparency = 1;floatlabel.BorderSizePixel = 0;floatlabel.Position = UDim2.new(1, 8, 0, 0);floatlabel.Size = UDim2.new(0, 79, 0, 20);floatlabel.Font = Enum.Font.SourceSans;floatlabel.Text = "Remove Float";floatlabel.TextColor3 = Color3.new(1, 1, 1);floatlabel.TextSize = 14;floatlabel.TextXAlignment = Enum.TextXAlignment.Left
+airwalk.Name = "airwalk";airwalk.Parent = c_core_1;airwalk.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);airwalk.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);airwalk.Position = UDim2.new(0.0477941185, 0, 0.267605633, 0);airwalk.Size = UDim2.new(0, 20, 0, 20);airwalk.Font = Enum.Font.SourceSans;airwalk.Text = "";airwalk.TextColor3 = Color3.new(0, 0, 0);airwalk.TextSize = 14
+airlabel.Name = "airlabel";airlabel.Parent = airwalk;airlabel.BackgroundColor3 = Color3.new(1, 1, 1);airlabel.BackgroundTransparency = 1;airlabel.BorderSizePixel = 0;airlabel.Position = UDim2.new(1, 8, 0, 0);airlabel.Size = UDim2.new(0, 79, 0, 20);airlabel.Font = Enum.Font.SourceSans;airlabel.Text = "Air Walk";airlabel.TextColor3 = Color3.new(1, 1, 1);airlabel.TextSize = 14;airlabel.TextXAlignment = Enum.TextXAlignment.Left
+invisible.Name = "invisible";invisible.Parent = c_core_1;invisible.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);invisible.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);invisible.Position = UDim2.new(0.0477941185, 0, 0.492957741, 0);invisible.Size = UDim2.new(0, 20, 0, 20);invisible.Font = Enum.Font.SourceSans;invisible.Text = "";invisible.TextColor3 = Color3.new(0, 0, 0);invisible.TextSize = 14
+invislabel.Name = "invislabel";invislabel.Parent = invisible;invislabel.BackgroundColor3 = Color3.new(1, 1, 1);invislabel.BackgroundTransparency = 1;invislabel.BorderSizePixel = 0;invislabel.Position = UDim2.new(1, 8, 0, 0);invislabel.Size = UDim2.new(0, 79, 0, 20);invislabel.Font = Enum.Font.SourceSans;invislabel.Text = "Invisible";invislabel.TextColor3 = Color3.new(1, 1, 1);invislabel.TextSize = 14;invislabel.TextXAlignment = Enum.TextXAlignment.Left
+crazy.Name = "crazy";crazy.Parent = c_core_1;crazy.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);crazy.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);crazy.Position = UDim2.new(0.0477941185, 0, 0.605633795, 0);crazy.Size = UDim2.new(0, 20, 0, 20);crazy.Font = Enum.Font.SourceSans;crazy.Text = "";crazy.TextColor3 = Color3.new(0, 0, 0);crazy.TextSize = 14
+crazylabel.Name = "crazylabel";crazylabel.Parent = crazy;crazylabel.BackgroundColor3 = Color3.new(1, 1, 1);crazylabel.BackgroundTransparency = 1;crazylabel.BorderSizePixel = 0;crazylabel.Position = UDim2.new(1, 8, 0, 0);crazylabel.Size = UDim2.new(0, 79, 0, 20);crazylabel.Font = Enum.Font.SourceSans;crazylabel.Text = "Crazy Foil";crazylabel.TextColor3 = Color3.new(1, 1, 1);crazylabel.TextSize = 14;crazylabel.TextXAlignment = Enum.TextXAlignment.Left
+aibot.Name = "aibot";aibot.Parent = c_core_1;aibot.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);aibot.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);aibot.Position = UDim2.new(0.0477941185, 0, 0.718309879, 0);aibot.Size = UDim2.new(0, 20, 0, 20);aibot.Font = Enum.Font.SourceSans;aibot.Text = "";aibot.TextColor3 = Color3.new(0, 0, 0);aibot.TextSize = 14
+ailabel.Name = "ailabel";ailabel.Parent = aibot;ailabel.BackgroundColor3 = Color3.new(1, 1, 1);ailabel.BackgroundTransparency = 1;ailabel.BorderSizePixel = 0;ailabel.Position = UDim2.new(1, 8, 0, 0);ailabel.Size = UDim2.new(0, 79, 0, 20);ailabel.Font = Enum.Font.SourceSans;ailabel.Text = "AI Bot";ailabel.TextColor3 = Color3.new(1, 1, 1);ailabel.TextSize = 14;ailabel.TextXAlignment = Enum.TextXAlignment.Left
+spinbot.Name = "spinbot";spinbot.Parent = c_core_1;spinbot.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);spinbot.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);spinbot.Position = UDim2.new(0.0477941185, 0, 0.830985904, 0);spinbot.Size = UDim2.new(0, 20, 0, 20);spinbot.Font = Enum.Font.SourceSans;spinbot.Text = "";spinbot.TextColor3 = Color3.new(0, 0, 0);spinbot.TextSize = 14
+spinlabel.Name = "spinlabel";spinlabel.Parent = spinbot;spinlabel.BackgroundColor3 = Color3.new(1, 1, 1);spinlabel.BackgroundTransparency = 1;spinlabel.BorderSizePixel = 0;spinlabel.Position = UDim2.new(1, 8, 0, 0);spinlabel.Size = UDim2.new(0, 79, 0, 20);spinlabel.Font = Enum.Font.SourceSans;spinlabel.Text = "Spin Bot";spinlabel.TextColor3 = Color3.new(1, 1, 1);spinlabel.TextSize = 14;spinlabel.TextXAlignment = Enum.TextXAlignment.Left
+ac.Name = "ac";ac.Parent = c_core_1;ac.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);ac.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);ac.Position = UDim2.new(0.0480000004, 0, 0.379999995, 0);ac.Size = UDim2.new(0, 20, 0, 20);ac.Font = Enum.Font.SourceSans;ac.Text = "";ac.TextColor3 = Color3.new(0, 0, 0);ac.TextSize = 14
+aclabel.Name = "aclabel";aclabel.Parent = ac;aclabel.BackgroundColor3 = Color3.new(1, 1, 1);aclabel.BackgroundTransparency = 1;aclabel.BorderSizePixel = 0;aclabel.Position = UDim2.new(1, 8, 0, 0);aclabel.Size = UDim2.new(0, 79, 0, 20);aclabel.Font = Enum.Font.SourceSans;aclabel.Text = "Auto Lunge";aclabel.TextColor3 = Color3.new(1, 1, 1);aclabel.TextSize = 14;aclabel.TextXAlignment = Enum.TextXAlignment.Left
+tpkill.Name = "tpkill";tpkill.Parent = c_core_1;tpkill.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);tpkill.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);tpkill.Position = UDim2.new(0.0480000004, 0, 0.155000001, 0);tpkill.Size = UDim2.new(0, 20, 0, 20);tpkill.Font = Enum.Font.SourceSans;tpkill.Text = "";tpkill.TextColor3 = Color3.new(0, 0, 0);tpkill.TextSize = 14
+tplabel.Name = "tplabel";tplabel.Parent = tpkill;tplabel.BackgroundColor3 = Color3.new(1, 1, 1);tplabel.BackgroundTransparency = 1;tplabel.BorderSizePixel = 0;tplabel.Position = UDim2.new(1, 8, 0, 0);tplabel.Size = UDim2.new(0, 79, 0, 20);tplabel.Font = Enum.Font.SourceSans;tplabel.Text = "TP Kill";tplabel.TextColor3 = Color3.new(1, 1, 1);tplabel.TextSize = 14;tplabel.TextXAlignment = Enum.TextXAlignment.Left
+killtxt.Name = "killtxt";killtxt.TextScaled = true;killtxt.Parent = c_core_1;killtxt.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);killtxt.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);killtxt.Position = UDim2.new(0.479999989, 0, 0.155000001, 0);killtxt.Size = UDim2.new(0, 70, 0, 20);killtxt.Font = Enum.Font.SourceSans;killtxt.PlaceholderColor3 = Color3.new(1, 1, 1);killtxt.Text = "...";killtxt.TextColor3 = Color3.new(1, 1, 1);killtxt.TextSize = 14;killtxt.TextWrapped = true
+killabel.Name = "killabel";killabel.Parent = killtxt;killabel.BackgroundColor3 = Color3.new(1, 1, 1);killabel.BackgroundTransparency = 1;killabel.BorderSizePixel = 0;killabel.Position = UDim2.new(1, 8, 0, 0);killabel.Size = UDim2.new(0, 79, 0, 20);killabel.Font = Enum.Font.SourceSans;killabel.Text = "Kill Text";killabel.TextColor3 = Color3.new(1, 1, 1);killabel.TextSize = 14;killabel.TextXAlignment = Enum.TextXAlignment.Left
+deathtxt.Name = "deathtxt";deathtxt.TextScaled = true;deathtxt.Parent = c_core_1;deathtxt.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);deathtxt.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);deathtxt.Position = UDim2.new(0.479999989, 0, 0.268000007, 0);deathtxt.Size = UDim2.new(0, 70, 0, 20);deathtxt.Font = Enum.Font.SourceSans;deathtxt.PlaceholderColor3 = Color3.new(1, 1, 1);deathtxt.Text = "...";deathtxt.TextColor3 = Color3.new(1, 1, 1);deathtxt.TextSize = 14;deathtxt.TextWrapped = true
+deathlabel.Name = "deathlabel";deathlabel.Parent = deathtxt;deathlabel.BackgroundColor3 = Color3.new(1, 1, 1);deathlabel.BackgroundTransparency = 1;deathlabel.BorderSizePixel = 0;deathlabel.Position = UDim2.new(1, 8, 0, 0);deathlabel.Size = UDim2.new(0, 79, 0, 20);deathlabel.Font = Enum.Font.SourceSans;deathlabel.Text = "Death Text";deathlabel.TextColor3 = Color3.new(1, 1, 1);deathlabel.TextSize = 14;deathlabel.TextXAlignment = Enum.TextXAlignment.Left
+drop.Name = "drop";drop.Parent = c_core_1;drop.BackgroundColor3 = Color3.new(0.105882, 0.117647, 0.145098);drop.BorderColor3 = Color3.new(0.184314, 0.192157, 0.223529);drop.Position = UDim2.new(0.479999989, 0, 0.0419999994, 0);drop.Size = UDim2.new(0, 20, 0, 20);drop.Font = Enum.Font.SourceSans;drop.Text = "";drop.TextColor3 = Color3.new(0, 0, 0);drop.TextSize = 14
+droplabel.Name = "droplabel";droplabel.Parent = drop;droplabel.BackgroundColor3 = Color3.new(1, 1, 1);droplabel.BackgroundTransparency = 1;droplabel.BorderSizePixel = 0;droplabel.Position = UDim2.new(1, 8, 0, 0);droplabel.Size = UDim2.new(0, 79, 0, 20);droplabel.Font = Enum.Font.SourceSans;droplabel.Text = "Drop Hats";droplabel.TextColor3 = Color3.new(1, 1, 1);droplabel.TextSize = 14;droplabel.TextXAlignment = Enum.TextXAlignment.Left
+
+
+--// TABS //--
+
+local fencing_on = false
+local fen_db = true
+Fencing.MouseButton1Down:connect(function()
+	if not fen_db then
+		return
+	end
+	fen_db = false
+--	fencing_on = not fencing_on
+	--if fencing_on then
+		FencingLabel.Visible = true
+		t1.Visible = true
+		t2.Visible = true
+		t1:TweenSize(UDim2.new(0, 80, 0, 15), "Out", "Quad", 0.2)
+		t2:TweenSize(UDim2.new(0, 80, 0, -15), "Out", "Quad", 0.2)
+		wait(.2)
+		Fencing.BackgroundColor3 = Color3.fromRGB(76, 130, 181)
+		FencingLabel.Visible = false
+		t1.Visible = false
+		t2.Visible = false
+		c_core_1.Visible = true
+--[[	else
+		FencingLabel.Visible = true
+		t1.Visible = true
+		t2.Visible = true
+		Fencing.BackgroundColor3 = Color3.fromRGB(27, 30, 37)
+		t1:TweenSize(UDim2.new(0, 80, 0, 0), "Out", "Quad", 0.2)
+		t2:TweenSize(UDim2.new(0, 80, 0, 0), "Out", "Quad", 0.2)
+		wait(.2)
+		FencingLabel.Visible = false
+		t1.Visible = false
+		t2.Visible = false
+	end
+	fen_db = true]]
+end)
+
+--// SCRIPTS //--
+
+function color_change(label, color_rgb)
+	label.BackgroundColor3 = color_rgb
+end
+
+local remdb = true
+local remfloat_on = false
+float.MouseButton1Down:connect(function()
+	if not remdb then
+		return
+	end		
+	remdb = false
+	remfloat_on = not remfloat_on
+	if remfloat_on then
+		color_change(float, Color3.fromRGB(76, 130, 181))
+	else
+		color_change(float, Color3.fromRGB(27, 30, 37))
+	end
+	remdb = true
+end)
+
+local crazydb = true
+local crazy_on = false
+crazy.MouseButton1Down:connect(function()
+	if not crazydb then
+		return
+	end		
+	crazydb = false
+	crazy_on = not crazy_on
+	if crazy_on then
+		color_change(crazy, Color3.fromRGB(76, 130, 181))
+	else
+		color_change(crazy, Color3.fromRGB(27, 30, 37))
+	end
+	crazydb = true
+end)
+
+local killdb = true
+killtxt.Focused:Connect(function()
+	if not killdb then
+		return
+	end
+	killdb = false
+    color_change(killtxt, Color3.fromRGB(76, 130, 181))
+    while wait() do
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v.Character then 
+                repeat wait() until v.Character and v.Character:FindFirstChild('Humanoid')
+				local hum = v.Character:FindFirstChild('Humanoid')
+                if hum and hum.Health == 0 and game.Players.LocalPlayer.Character:WaitForChild('Humanoid').Health ~= 0 and hum:FindFirstChild('creator') then 
+                    if tostring(hum:FindFirstChild('creator').Value) == game.Players.LocalPlayer.Name then
+                    	if killtxt.Text == "" or killtxt.Text == "..." or killtxt.Text == " " then
+							color_change(killtxt, Color3.fromRGB(27, 30, 37))
+							killtxt.Text = "..."
+						else
+							color_change(killtxt, Color3.fromRGB(76, 130, 181))
+							game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tostring(v.Name) .. ", " .. killtxt.Text, "All")
+							repeat wait() until hum:FindFirstChild('creator') == nil
+                   		end
+					end
+                end
+            end
+        end
+    end
+	killdb = true
+end)
+killtxt.FocusLost:Connect(function(enter)
+    if not enter then
+		if killtxt.Text == "" or killtxt.Text == "..." or killtxt.Text == " " then
+        	color_change(killtxt, Color3.fromRGB(27, 30, 37))
+        	killtxt.Text = "..."
+		else
+			color_change(killtxt, Color3.fromRGB(76, 130, 181))
+		end
+    end
+end)
+
+local deathdb = true
+deathtxt.Focused:Connect(function()
+	color_change(deathtxt, Color3.fromRGB(76, 130, 181))
+    while wait() do
+    	local player = game.Players.LocalPlayer
+		local hum = player.Character:WaitForChild('Humanoid')
+        if player.Character then
+            hum.Died:connect(function() 
+                if hum:FindFirstChild('creator') then
+					if not deathdb then
+						return
+                    end
+                    deathdb = false  
+					if deathtxt.Text == "" or deathtxt.Text == "..." or deathtxt.Text == " " then
+						color_change(deathtxt, Color3.fromRGB(27, 30, 37))
+						deathtxt.Text = "..."
+					else      
+                    	color_change(deathtxt, Color3.fromRGB(76, 130, 181))
+						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tostring(hum:FindFirstChild('creator').Value) .. ", " .. deathtxt.Text, "All")
+                    	repeat wait() until hum:FindFirstChild('creator') == nil
+					end
+                    deathdb = true
+                end
+            end)
+        end
+    end
+end)
+deathtxt.FocusLost:Connect(function(enter)
+    if not enter then
+		if deathtxt.Text == "" or deathtxt.Text == "..." or deathtxt.Text == " " then
+        	color_change(deathtxt, Color3.fromRGB(27, 30, 37))
+        	deathtxt.Text = "..."
+		else
+			color_change(deathtxt, Color3.fromRGB(76, 130, 181))
+		end
+    end
+end)
+
+airdb = true
+airwalkon = false
+airwalk.MouseButton1Down:connect(function()
+	if not airdb then
+		return
+	end
+	airdb = false
+	airwalkon = not airwalkon
+	local ccd = game:GetService("Players").LocalPlayer
+	if airwalkon then
+		if ccd.Character.Humanoid then
+			color_change(airwalk, Color3.fromRGB(76, 130, 181))
+			ccd.Character.Humanoid.HipHeight = 4
+		end
+	else
+		if ccd.Character.Humanoid then
+			ccd.Character.Humanoid.HipHeight = 0
+			color_change(airwalk, Color3.fromRGB(27, 30, 37))
+		end
+	end 
+	airdb = true
+end)
+
+local dropdb = true
+drop.MouseButton1Down:connect(function()
+	if not dropdb then
+		return
+	end		
+	dropdb = false
+	color_change(drop, Color3.fromRGB(76, 130, 181))
+	for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+		if v:IsA("Accessory") or v:IsA('Accoutrement') or v:IsA('Hat') then
+			v.Parent = workspace
+		end
+	end
+	wait()
+	color_change(drop, Color3.fromRGB(27, 30, 37))
+	dropdb = true
+end)
+
+local invisdb = true
+local invis_on = false
+invisible.MouseButton1Down:connect(function()
+	if not invisdb then
+		return
+	end		
+	invisdb = false
+	invis_on = not invis_on
+	if invis_on then
+		color_change(invisible, Color3.fromRGB(76, 130, 181))
+		local savedpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		wait()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-25.95, 84, 3537.55))
+		wait(.15)
+		local Seat = Instance.new('Seat', game.Workspace)
+		Seat.Anchored = false
+		Seat.CanCollide = false
+		Seat.Name = 'simplex'
+		Seat.Transparency = 1
+		Seat.Position = Vector3.new(-25.95, 84, 3537.55)
+		local Weld = Instance.new("Weld", Seat)
+		Weld.Part0 = Seat
+		Weld.Part1 = game.Players.LocalPlayer.Character.Torso
+		wait()
+		Seat.CFrame = savedpos
+	else
+		color_change(invisible, Color3.fromRGB(27, 30, 37))
+		workspace:FindFirstChild('simplex'):Remove()
+	end
+	invisdb = true
+end)
+
+local tpdb = true
+local tpkill_on = false
+tpkill.MouseButton1Down:connect(function()
+	if not tpdb then
+		return
+	end	
+	tpdb = false
+	tpkill_on = not tpkill_on
+	local rat = game.Players.LocalPlayer:GetMouse()
+	local me = game.Players.LocalPlayer
+	if tpkill_on then
+		color_change(tpkill, Color3.fromRGB(76, 130, 181))
+		rat.Button1Down:connect(function()
+			local target = rat.Target
+			if tpkill_on and target ~= nil and game.Players:FindFirstChild(target.Parent.Name) then
+				local player = target.Parent
+				me.Character.HumanoidRootPart.CFrame = player.HumanoidRootPart.CFrame * CFrame.new(-1, 0, 2)
+				if me.Character:FindFirstChildOfClass('Tool') ~= nil then
+					for i = 1, 3 do
+						me.Character:FindFirstChildOfClass('Tool'):Activate()
+						wait()
+					end
+				end
+			end
+		end)
+	else
+		color_change(tpkill, Color3.fromRGB(27, 30, 37))
+	end
+	tpdb = true
+end)
+
+_G.SB = false
+_G.AC = false
+
+local spindb = true
+spinbot.MouseButton1Down:connect(function()
+	if not spindb then
+		return
+	end
+	spindb = false
+	_G.SB = not _G.SB
+	if _G.SB then
+		color_change(spinbot, Color3.fromRGB(76, 130, 181))
+	else
+		color_change(spinbot, Color3.fromRGB(27, 30, 37))
+	end
+	spindb = true
+end)
+
+local acdb = true
+ac.MouseButton1Down:connect(function()
+	if not acdb then
+		return
+	end
+	acdb = false
+	_G.AC = not _G.AC
+	if _G.AC then
+		color_change(ac, Color3.fromRGB(76, 130, 181))
+	else
+		color_change(ac, Color3.fromRGB(27, 30, 37))
+	end
+	acdb = true
+end)
+
+local aidb = true
+local ai_on = false
+local PathfindingService = game:GetService("PathfindingService")
+local plr=game:GetService('Players').LocalPlayer
+local NameCheck=true
+local Beam,Attach1,Attach2
+local ToolName="Foil" or nil
+local humanoid
+local torso
+local Attach1
+local Attach2
+local Beam
+local waypoints
+local path
+local target
+local player
+aibot.MouseButton1Down:connect(function()
+    ai_on = not ai_on
+    humanoid = plr.Character:WaitForChild("Humanoid")
+    torso = plr.Character:WaitForChild("Torso")
+    if ai_on then
+		color_change(aibot, Color3.fromRGB(76, 130, 181))
+        humanoid.AutoRotate = false
+        Beam=Instance.new('Beam') Beam.Parent=torso
+        Attach1=Instance.new('Attachment')
+        Attach2=Instance.new('Attachment')
+        Attach1.Parent=torso
+        Beam.Attachment0=Attach1
+        Beam.Attachment1=Attach2
+        Beam.Color=ColorSequence.new(Color3.fromRGB(76, 130, 181)),Color3.fromRGB(76, 130, 181)   
+    elseif not ai_on then
+        humanoid.AutoRotate = true
+        if torso:FindFirstChild('Beam') then
+            torso:FindFirstChild('Beam'):Destroy()
+        end
+		color_change(aibot, Color3.fromRGB(27, 30, 37))
+    end
+    function Found(group, text) if string.find(group, text) then return true  else return false  end end
+    local hroot = plr.Character:WaitForChild('HumanoidRootPart')
+    function FindNearest(position)
+        	local lowest = math.huge
+        	local NearestPlayer = nil
+        	for i,v in pairs(game.Players:GetPlayers()) do
+        	    if v and v.Character and v.Name~=plr.Name and v.Character:FindFirstChild('Humanoid').Health>0 and not v.Character:FindFirstChild('Humanoid').Sit and v.Character:FindFirstChild('Humanoid').MoveDirection ~= Vector3.new(0, 0, 0) and v.Character.Torso.Position.Y<torso.Position.Y+30 then
+        	        local distance = v:DistanceFromCharacter(position)
+        	        if distance < lowest then
+        	            lowest = distance
+        	            NearestPlayer = v
+        	        end
+                end
+        	end
+        	return NearestPlayer
+        end	 
+    while ai_on do
+            humanoid.Died:Connect(function()
+                ai_on=false
+                repeat wait() until plr.Character ~= nil
+				color_change(aibot, Color3.fromRGB(27, 30, 37))
+            end)
+            spawn(function()
+                player=FindNearest(hroot.Position)
+				if player then
+					target = player.Character.HumanoidRootPart
+					path = PathfindingService:FindPathAsync(torso.Position, target.Position)
+					plr.Character.HumanoidRootPart.CFrame = CFrame.new(plr.Character.HumanoidRootPart.Position, target.Position)
+					plr.Character.HumanoidRootPart.CFrame = CFrame.new(plr.Character.HumanoidRootPart.Position, Vector3.new(target.Position.X, plr.Character.HumanoidRootPart.Position.Y, target.Position.Z))
+					if plr.Backpack:FindFirstChild(ToolName) then plr.Backpack:FindFirstChild(ToolName).Handle.Massless = true; plr.Backpack:FindFirstChild(ToolName).Handle.Size=Vector3.new(2, 2, 5.5) plr.Backpack:FindFirstChild(ToolName).Parent=plr.Character end
+					if player.Character.Torso.Position.Y>torso.Position.Y+1 then
+						humanoid.Jump=true
+					end
+					if humanoid.Sit then
+						humanoid.Sit = not humanoid.Sit
+					end
+					if player.Character.Humanoid.Health>0 then
+						Attach2.Parent=player.Character.Torso
+					end
+					if path.Status == Enum.PathStatus.Success then
+						waypoints = path:GetWaypoints()
+						for i = 1, #waypoints do
+							local waypoint = waypoints[i]
+							if waypoint then
+								local destination = waypoint.Position
+								humanoid:MoveTo(destination)
+								if waypoint.Action == Enum.PathWaypointAction.Jump then
+									humanoid.Jump = true
+								end
+							end
+							local reached = humanoid.MoveToFinished:Wait()
+						end
+						if plr.Character:FindFirstChild(ToolName) ~= nil then
+							plr.Character:FindFirstChild(ToolName):Activate()
+						end
+					end
+				waypoints=path:GetWaypoints()
+			end
+        end)
+        game:GetService('RunService').RenderStepped:Wait()
+    end
+end)
+
+a = 0
+while true do
+	a = a + 60
+	if a == 360 then
+		a = 0
+	end
+	if _G.SB then
+		game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.Angles(0,math.rad(a),0) + game:GetService("Players").LocalPlayer.Character:WaitForChild("Torso").CFrame.p
+	end
+	if _G.AC then
+		for i,tool in pairs(game:GetService('Players').LocalPlayer.Character:GetChildren()) do
+			if tool and tool:IsA('Tool') and tool.Name == 'Foil' then
+				tool:Activate()
+			end
+		end
+	end
+	if remfloat_on then
+		for i,v in pairs(game.Players.LocalPlayer.Character:WaitForChild('Torso'):GetChildren()) do
+			if v:IsA('BodyVelocity') and v ~= nil then
+				v:Remove()
+			end
+		end
+	end
+	if crazy_on then
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v:IsA('Tool') then
+				v.GripForward = Vector3.new(math.random(), math.random(), math.random())
+				v.GripPos = Vector3.new(math.random(), math.random(), -10)
+				v.GripRight = Vector3.new(math.random(), math.random(), math.random())
+				v.GripUp = Vector3.new(math.random(), math.random(), math.random())
+				v.Parent = game.Players.LocalPlayer.Character
+			end
+		end
+		wait(.01)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v:IsA('Tool') then
+				v.Parent = game.Players.LocalPlayer.Backpack
+			end
+		end
+	end
+	if game.Players.LocalPlayer.Character.Humanoid then
+		game.Players.LocalPlayer.Character.Humanoid.Died:Connect(function()
+			ai_on=false
+			color_change(aibot, Color3.fromRGB(27, 30, 37))
+			crazy_on=false
+			color_change(crazy, Color3.fromRGB(27, 30, 37))
+			airwalkon=false
+			color_change(airwalk, Color3.fromRGB(27, 30, 37))
+			_G.SB=false
+			color_change(spinbot, Color3.fromRGB(27, 30, 37))
+			invis_on=false
+			color_change(invisible, Color3.fromRGB(27, 30, 37))
+		end)
+	end
+	wait()
+end
